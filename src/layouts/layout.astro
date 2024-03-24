@@ -1,0 +1,54 @@
+---
+const metadata = {
+  title: "iGaming Front End Developer | Moises Obando | Betcris",
+  description:
+    "Portfolio | Skilled iGaming Front End Developer with passion about crafting immersive websites for enhanced player experiences.",
+  url: "https://moisesobando.com/",
+  urlimg: "https://moisesobando.com/photo.webp",
+  type: "website",
+  sitename: "Moises Obando Portfolio",
+  creator: "Moises Obando | Lunox",
+};
+---
+
+<html lang="en">
+  <head>
+    <!-- <GTMHead /> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{metadata.title}</title>
+    <meta name="description" content={metadata.description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="canonical" href={metadata.url} />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content={metadata.title} />
+    <meta property="og:description" content={metadata.description} />
+    <meta property="og:image" content={metadata.urlimg} />
+    <meta property="og:type" content={metadata.type} />
+    <meta property="og:url" content={metadata.url} />
+    <meta property="og:site_name" content={metadata.sitename} />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={metadata.url} />
+    <meta property="twitter:domain" content={metadata.url} />
+    <meta property="twitter:url" content={metadata.url} />
+    <meta name="twitter:title" content={metadata.title} />
+    <meta name="twitter:description" content={metadata.description} />
+    <meta name="twitter:image" content={metadata.urlimg} />
+    <meta name="twitter:creator" content={metadata.creator} />
+  </head>
+  <body class="relative bg-[#000212]">
+    <div
+      class="absolute min-h-screen w-screen top-0 z-[-2] bg-[#000212] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    >
+      <div
+        class="flex flex-col justify-center items-center mx-auto p-4 max-w-screen-md my-10 text-[#B5BDD0]"
+      >
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>
