@@ -1,4 +1,7 @@
 ---
+import GTMBody from "../components/GTM/GTMBody.astro";
+import GTMHead from "../components/GTM/GTMHead.astro";
+
 const metadata = {
   title: "iGaming Front End Developer | Moises Obando | Betcris",
   description:
@@ -13,7 +16,7 @@ const metadata = {
 
 <html lang="en">
   <head>
-    <!-- <GTMHead /> -->
+    <GTMHead />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{metadata.title}</title>
@@ -41,6 +44,7 @@ const metadata = {
     <meta name="twitter:creator" content={metadata.creator} />
   </head>
   <body class="relative bg-[#000212]">
+    <GTMBody />
     <div
       class="absolute min-h-screen w-screen top-0 z-[-2] bg-[#000212] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
