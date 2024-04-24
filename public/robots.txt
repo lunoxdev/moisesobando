@@ -1,5 +1,3 @@
 User-agent: *
-Disallow: /_astro/Moises-Obando-Front-end.044b47ed.pdf
-Disallow: /assets/cv/Moises-Obando-Front-end.pdf
 Allow: /
 Sitemap: https://moisesobando.com/sitemap.xml
